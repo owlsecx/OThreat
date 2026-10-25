@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-URL reputation via VirusTotal + URLScan.io ║
+
+OThreat is a malicious-URL intelligence engine that checks URL reputation against VirusTotal and URLScan.io. It submits and correlates results from both services to give a consolidated verdict, and supports batch analysis with CSV/JSON export. It is intended for authorized defensive analysis and never scans URLs without ownership or permission.
 
 ---
 
 ## ✨ Features
 
-- Malicious URL reputation checker via VirusTotal and URLScan.io (authorized use)
+
+- URL reputation lookups via VirusTotal and URLScan.io, correlated into a single verdict
+- Batch URL analysis from a list
+- Threaded submission and polling for faster multi-URL runs
+- Clear, colour-coded risk presentation in the terminal
+- CSV and JSON export of results
+- Offline --self-test for safe verification
 
 ---
 
@@ -37,8 +44,11 @@ URL reputation via VirusTotal + URLScan.io ║
 
 ## 🚀 Usage
 
+
 ```bash
 ./OThreat
+./OThreat --self-test
+./OThreat --help
 ```
 
 ---
